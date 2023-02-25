@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Resignation Form</title>
+
+        <style>
+            h1{
+                font-size: 25px;
+                font-weight: bold;
+                text-align: center;
+                text-decoration: underline;
+            }
+
+            p{
+                text-align: center;
+            }
+
+            table{
+                color: white;
+                font-size: 20px;
+                font-weight: bold;
+                background: linear-gradient(to bottom, blue 0%, green 100%);
+                border: 4px soild red;
+                border-style: dashed;
+            }
+
+            #input1{
+                width: 40%;
+                padding: 5px 10px;
+                margin: 5px 0;
+                box-sizing: border-box;
+            }
+
+            #input2{
+                width: 40%;
+                padding: 5px 10px;
+                margin: 5px 0;
+                box-sizing: border-box;
+            }
+
+            #input5{
+                width: 20%;
+                font-size: 15px;
+                color: red;
+                padding: 6px 12px;
+                margin: 5px 0;
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <h1><strong>Resignation Form</strong></h1>
+        <p>You've decided to leave us. Sad. Please fill out this form so that we know of your experience with us.</p>
+        <form>
+            <table align="center" cellpadding="10" width="100%">
+                <tr>
+                    <td>Name *</td>
+                    <td>
+                        <input type="text" name="FirstName" maxlength="50" id="input1" placeholder="first">
+                        <input type="text" name="LastName" maxlength="50" id="input2" placeholder="last">
+                    </td>
+                </tr>
+
+                <br><br>
+
+                <tr>
+                    <td>When are you leaving us? *</td>
+                    <td>
+                        <input type="text" name="text1" maxlength="150" id="input3">
+                    </td>
+                </tr>
+
+                <br><br>
+
+                <tr>
+                    <td>Please rate your experience in our company. *</td>
+                    <td>
+                        <div class="rating">
+                            <input type="radio" name="rating" id="rating5" value="5">
+                            <label for="rating5"></label>
+                            <input type="radio" name="rating" id="rating4" value="4">
+                            <label for="rating4"></label>
+                            <input type="radio" name="rating" id="rating3" value="3">
+                            <label for="rating3"></label>
+                            <input type="radio" name="rating" id="rating2" value="2">
+                            <label for="rating2"></label>
+                            <input type="radio" name="rating" id="rating1" value="1">
+                            <label for="rating1"></label>
+                        </div>
+                    </td>
+                </tr>
+
+                <br><br>
+
+                <tr>
+                    <td>How much have you learned from your time with us? *</td>
+                    <td>
+                        <textarea name="textarea" rows="10" cols="50"></textarea>
+                    </td>
+                </tr>
+
+                <br><br>
+
+                <tr>
+                    <td>Can we have your autograph, one last time? *</td>
+                    <td>
+                        <input type="text" name="sign" id="input4"><br>
+                        <a href="#clear">clear</a>
+                    </td>
+                </tr>
+
+                <br>
+            <table width="100%">
+                <tr>
+                    <td align="center">
+                        <input type="submit" name="submit" value="Submit" id="input5">
+                    </td>
+                </tr>
+            </table>    
+
+            </table>
+        </form>
+    </body>
+</html>
